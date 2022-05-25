@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora </title>
+
+    <style>
+		label{
+			width:300px;
+			
+			padding: 10px;
+			display:block;
+		}
+		form{
+			position:relative;
+		}
+		form input[type='number']{
+			text-align:center;
+		}
+		.operaciones{
+			position:absolute;
+			left:240px;
+			top: 40px;
+			width:150px;			
+		}
+		.operaciones input[type='button']{
+			width:40px;
+			display:block;
+			float:left;
+		}
+        
+        .operaciones button{
+			width:40px;
+			display:block;
+			float:left;
+		}
+
+		body{
+			background-color: rgb(0, 153, 255);
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 25px;
+		}
+
+        #container{
+           background-color: bisque;
+		   margin-left: 700px;
+		   padding: 10px;
+		   width: 500px;
+		}
+
+        #page_header{
+		   text-align: center;
+		   background-color: bisque;
+		   margin-left: 700px;
+		   padding: 10px;
+		   width: 500px;
+		}
+
+      #page_footer{
+		   text-align: center;
+		   background-color: bisque;
+		   margin-left: 700px;
+		   padding: 10px;
+		   width: 500px;
+		}
+    </style>
+</head>
+<body>
+    <header id="page_header">
+        <h1>Calculadora</h1>  
+      </header>
+<section id="container">
+		<article>
+    
+        <form id="form">
+            <div class="controls">
+            <label for="">Numero 1</label>
+            <input type="number" id="valor1">
+            <label for="">Numero 2</label>
+            <input type="number" id="valor2">
+        </div>
+
+         <div class="operaciones">
+			<input type="button" value="+" onclick="sumar();">
+			<input type="button" value="-" onclick="restar();">
+			<input type="button" value="x" onclick="multiplicar();">
+			<input type="button" value="/" onclick="dividir();">
+			<input type="button" value="=" onclick="igual();">
+			<button onclick="limpiar();">C</button>
+        </div>
+
+       <div>
+            <h3>Resultado</h3>
+            <p>El Resultado es: <span id="resultado"></span></p>
+       </div>
+     </form>
+ </article>
+</section>
+
+<script type="text/javascript" src="calculadora.js"></script>
+
+     <footer id="page_footer">
+    <p>Derechos de autor 2022</p>
+</footer>
+
+</body>
+</html>

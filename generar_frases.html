@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Generador de frases</title>
+  <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+</head>
+<body>
+<header>
+  <h1>Generador de frases</h1>  
+</header>
+	<section class="formulario">
+		<form method="post">
+			    <div class="username">
+				<label>Escriba una palabra o frase en la caja y esta p&aacute;gina crear&aacute; una frase que le ayudar&aacute; a recordarla.<br/>
+				<input type="text" name="palabra" value="" id="mnemonic" size="40"/>
+				</label>
+			</div>
+			   <div class="recordar">
+				<input type="button" value="Generar" onclick="generar();" />
+	
+				<p>La Palabra en Frase seria: <span id="letras"></span></p>
+				</div>			
+			</form>
+				<div id="frase">
+					
+				</div>
+		 
+	</section>
+<footer>Derechos de autor 2022</footer>
+<script src="frases.js"></script>
+
+
+</body>
+</html>
